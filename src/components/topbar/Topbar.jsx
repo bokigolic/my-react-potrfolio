@@ -1,13 +1,13 @@
 import "./topbar.scss";
 import { Person, Mail } from "@mui/icons-material";
 
-export default function Topbar({ menuOpen, setMenuOpen }) {
+export default function Topbar() {
   return (
-    <div className={"topbar " + (menuOpen && "active")}>
+    <div className={"topbar active"}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            Bojan Golic
+            Bojan
           </a>
           <div className="itemContainer">
             <Person className="icon" />
@@ -19,7 +19,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           </div>
         </div>
         <div className="right">
-          <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
+          <div className="hamburger">
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
