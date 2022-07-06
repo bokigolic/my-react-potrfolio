@@ -4,6 +4,7 @@
   background-color: white;
   display: flex;
 
+  
 
   .left {
     flex: 0.5;
@@ -19,11 +20,12 @@
       justify-content: center;
       float: right;
 
-    
+      
+
       img {
         height: 90%;
 
-      
+       
       }
     }
   }
@@ -39,19 +41,22 @@
       flex-direction: column;
       justify-content: center;
 
- 
+     
 
       h1 {
         font-size: 60px;
         margin: 10px 0;
 
-     
+        
       }
       h2 {
         font-size: 35px;
       }
       h3 {
         font-size: 30px;
+
+       
+
         span {
           font-size: inherit;
           color: crimson;
