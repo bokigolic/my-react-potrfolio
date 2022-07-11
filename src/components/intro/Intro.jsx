@@ -20,7 +20,7 @@ export default function Intro() {
           </h3>
           
           <h3>
-          <span>Back End Developer</span>
+          <span>Back  End Developer</span>
           </h3>
         </div>
         <a href="#portfolio">
