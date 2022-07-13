@@ -1,35 +1,44 @@
-.works{
+@import "../../global.scss";
+
+.works {
   background-color: crimson;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 
-  .arrow{
+  .arrow {
     height: 50px;
     position: absolute;
+    cursor: pointer;
 
-    &.left{
+ 
+
+    &.left {
       left: 100px;
       transform: rotateY(180deg);
-      cursor: pointer;
+    }
+
+    &.right {
+      right: 100px;
     }
   }
 
-
-  .slider{
+  .slider {
     height: 350px;
     display: flex;
     position: absolute;
     left: 0;
+    transition: all 1s ease-out;
 
-    .container{
+
+    .container {
       width: 100vw;
       display: flex;
       align-items: center;
       justify-content: center;
 
-      .item{
+      .item {
         width: 700px;
         height: 100%;
         background-color: white;
@@ -39,21 +48,21 @@
         justify-content: center;
 
 
-        .left{
+        .left {
           flex: 4;
           height: 80%;
           display: flex;
           align-items: center;
           justify-content: center;
 
-          .leftContainer{
+          .leftContainer {
             width: 90%;
             height: 70%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
 
-            .imgContainer{
+            .imgContainer {
               width: 40px;
               height: 40px;
               border-radius: 50%;
@@ -62,17 +71,24 @@
               align-items: center;
               justify-content: center;
 
-              img{
+        
+
+              img {
                 width: 25px;
+
+          
               }
             }
-            h2{
+            h2 {
               font-size: 20px;
+
+        
             }
-            p{
+            p {
               font-size: 13px;
+           
             }
-            span{
+            span {
               font-size: 12px;
               font-weight: 600;
               text-decoration: underline;
@@ -80,7 +96,7 @@
             }
           }
         }
-        .right{
+        .right {
           flex: 8;
           height: 100%;
           display: flex;
@@ -88,17 +104,12 @@
           justify-content: center;
           overflow: hidden;
 
-          img{
+          img {
             width: 400px;
             transform: rotate(-10deg);
           }
-
         }
-
-     
-
       }
     }
   }
-
 }
